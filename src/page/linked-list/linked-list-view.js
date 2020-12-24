@@ -48,6 +48,7 @@ class LinkedListView extends React.Component {
     render() {
         return (
             <div className="container" className={css.node_container}>
+                <h5>Linked List</h5>
                 {this.headArrow()}
                 {this.state.nodes.map((node, index) => {
                     return <div className={css.node} style={{ background: node.bgColor }} key={index}>{node.value}</div>

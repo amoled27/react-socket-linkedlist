@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 let Style = {
     cardBody: {
         boxShadow: "7px 6px 8px #d0cdcd",
@@ -42,6 +43,7 @@ class NodeAdder extends React.Component {
     render() {
         return (
             <div>
+                <Link to={"/linkedlist"} target="_blank" style={{fontSize: "20px"}}> Linked List</Link>
                 <div style={Style.card}>
                     <div style={Style.cardBody}>
                         <h3>Add a Node</h3>
